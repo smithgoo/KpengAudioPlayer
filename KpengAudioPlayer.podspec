@@ -32,9 +32,7 @@ s.source_files = 'SingDemo/*'
 # s.ios.exclude_files = 'Classes/osx'
 # s.osx.exclude_files = 'Classes/ios'
 # s.public_header_files = 'Classes/**/*.h'
-s.vendored_frameworks = [
-'Pod/Frameworks/*.framework'
-]
-s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
+s.dependency "AFNetworking", '~> 3.1.0'
+s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit', 'AVFoundation'
 
 end
