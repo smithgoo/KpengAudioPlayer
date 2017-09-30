@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-5I-Gxi">
+                                <rect key="frame" x="10" y="548" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6CS-P3-qZx"/>
+                                </constraints>
+                                <state key="normal" title="下载"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUj-5O-Qyl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲不存在" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-Eo-iIW">
+                                <rect key="frame" x="144" y="323" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jp-7g-GDr">
+                                <rect key="frame" x="172" y="598" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SVx-aH-1Wi"/>
+                                </constraints>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdo-Q6-8ZQ"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qsl-Is-ula"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPc-5I-Gxi" secondAttribute="trailing" constant="10" id="Oc1-dE-9H2"/>
+                            <constraint firstItem="VqC-Eo-iIW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XjQ-kj-zMT"/>
+                            <constraint firstItem="9Jp-7g-GDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aKf-ID-YKT"/>
+                            <constraint firstItem="9Jp-7g-GDr" firstAttribute="top" secondItem="pPc-5I-Gxi" secondAttribute="bottom" constant="20" id="dgj-NK-yvG"/>
+                            <constraint firstItem="VqC-Eo-iIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iyC-vR-61A"/>
+                            <constraint firstItem="pPc-5I-Gxi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jtd-4s-qA9"/>
+                            <constraint firstItem="pPc-5I-Gxi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="qlk-ex-NGM"/>
+                            <constraint firstItem="pPc-5I-Gxi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="528" id="x4x-so-Jgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hereLab" destination="VqC-Eo-iIW" id="DCe-x2-AfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
