@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "KpengSingShowView.h"
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import "KpengAudioPlayer.h"
 @interface ViewController ()<KpengAudioPlayerDelegate>
 {

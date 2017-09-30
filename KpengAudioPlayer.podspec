@@ -21,18 +21,18 @@ s.author             = { "KPeng" => "294336370@qq.com" }
 s.source           = { :git => "https://github.com/smithgoo/KpengAudioPlayer.git", :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/NAME'
 
-s.platform     = :ios, '4.3'
+s.platform     = :ios, '7.0'
 # s.ios.deployment_target = '5.0'
 # s.osx.deployment_target = '10.7'
 s.requires_arc = true
 
 s.source_files = 'SingDemo/*'
-# s.resources = 'Assets'
+#s.source_files = 'Pod/Classes/**/*.{h,m}'
 
 # s.ios.exclude_files = 'Classes/osx'
 # s.osx.exclude_files = 'Classes/ios'
-# s.public_header_files = 'Classes/**/*.h'
-s.dependency "AFNetworking", '~> 3.1.0'
-s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit', 'AVFoundation'
+#s.public_header_files = 'SingDemo/*'
+s.dependency "AFNetworking", "3.1.0"
+s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit', 'SystemConfiguration', 'MobileCoreServices'
 
 end
